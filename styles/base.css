@@ -66,4 +66,5 @@ body {
 #animalLinks a {
 	float: left;
 	clear: both;
+	overflow: auto;
 }
