@@ -56,4 +56,6 @@ body {
 	grid-column: 1 / 13;
 }
 
-#
+#animalPageContent {
+	grid-column: 3 / 13;
+}
