@@ -47,10 +47,13 @@ body {
 
 .navbar a {
 	float: left;
-	width: 16%;
+	width: 15%;
 	text-align: center;
 	border: solid black 1px;
-	margin: .211%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
 }
 
 #contactPageContent {
@@ -61,6 +64,12 @@ body {
 #animalPageContent {
 	grid-column: 4 / 13;
 	grid-row: 4 / 13;
+	padding: 10px
+}
+
+#animalPageContent img {
+	padding: 10px;
+	display: inline-block;
 }
 
 #animalLinks {
@@ -91,4 +100,19 @@ body {
 	grid-column: 1 / 13;
 }
 
+#sloth {
+	width: 60%;
+	height: 60%;
+}
 
+#logo {
+	grid-column: 1 / 13;
+	grid-row: 5;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#indexPageContent {
+	grid-column: 1 / 13;
+	grid-row: 4;
+}
