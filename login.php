@@ -4,14 +4,14 @@
 
     $conID; $db;
 
-    $uName;
+    $fName;
 
     function openDatabase(&$conID, &$db){
-        $host = "localhost";
-        $db = "4180656_users"
+        $host = "fdb1027.freehostspace.com";
+        $db = "4180656_users";
 
-        $usr = "root";
-        $pw = "";
+        $usr="4180656_users";
+        $pw = "RED-panda12";
 
         $conID = new mysqli($host, $usr, $pw, $db);
 
@@ -21,8 +21,8 @@
     }
 
     function pwOK($conID, $userName, $password){
-        $SQL = "SELECT * FROM registration"
-        $SQL = $SQL."WHERE userName='$userName' AND password='$password'";
+        $SQL = " SELECT * FROM registration";
+        $SQL = $SQL." WHERE userName='$userName' AND password='$password'";
         $result = $conID->query($SQL);
         if(!$result){
             die("Query Error: ".$SQL.":".$conID->connect_error);
@@ -31,7 +31,7 @@
             if(!$row){
                 return false;
             } else {
-                $uName=$row['userName'];
+                $fName = $row["userName"];
                 $result->close();
                 return true;
             }
@@ -41,10 +41,11 @@
 
     openDatabase($conID, $db);
 
-    if(pwOK($conID, $userName, $password)){
-        echo"<h1>Welcome ".$uName"</h1>";
+    if(pwOK($conID, $userName, $password)){    
+        header("Location: http://pixelperfectanimals.freehostspace.com/index.html"); 
+        die();
     }else{
-        echo"<h1> User name and or password were incorrect</h1>"
+        echo"<h1> User name and or password were incorrect</h1>";
     }
     $conID->close();
 ?>
