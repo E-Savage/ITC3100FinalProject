@@ -33,7 +33,7 @@
 
     openDatabase($conID);
     if(write($conID, $username, $password)){
-        header("Location: http://pixelperfectanimals.freehostspace.com/index.html"); 
+        header("Location: http://pixelperfectanimals.freehostspace.com/login.html"); 
         die();
     } else {
         echo"<h1> User name and or password were incorrect, please try again!</h1>";

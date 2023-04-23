@@ -70,6 +70,7 @@ body {
 	padding: 10px;
 	border: solid black 5px;
 	background-color: #C4A484;
+	overflow: auto;
 }
 
 #animalPageContent img {
@@ -156,4 +157,9 @@ body {
 	margin: 5%;
 	padding: 5%;
 	border: solid black 1px;
+}
+
+#chart {
+	width: 90%;
+	height: 90%;
 }
