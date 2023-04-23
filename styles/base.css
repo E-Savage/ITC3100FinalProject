@@ -116,3 +116,11 @@ body {
 	grid-column: 1 / 13;
 	grid-row: 4;
 }
+
+#login {
+	grid-column: 1 / 13;
+}
+
+#register {
+	grid-column: 1 / 13;
+}
