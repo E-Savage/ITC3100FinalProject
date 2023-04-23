@@ -75,3 +75,20 @@ body {
 	text-align: center;
 	width: 90%;
 }
+
+#contactPageContent {
+	grid-column: 1 / 13;
+	grid-row: 4 / 10;
+	padding: 10%;
+}
+
+#aboutPage {
+	grid-row: 4;
+	grid-column: 1/ 13;
+}
+
+.quiz {
+	grid-column: 1 / 13;
+}
+
+

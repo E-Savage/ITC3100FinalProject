@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Change To fit Webpage</title>
+		<title>Animal Quiz</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="styles/base.css">
 	</head>
 	
 	<body>
+
+		<script src="scripts/quiz.js"></script>
+
 		<div id="container">
 			
 			<div id="headerTitle">
-				<h1>Change to fit Webpages</h1>
+				<h1>Pixel Perfect Animals</h1>
 			</div>
 			
 			<div class="pageTitle">
-				<h2>Page Title</h2>
+				<h2>Animal Quiz</h2>
 			</div>
 			
 			<div class="navbar">
@@ -24,6 +27,78 @@
 				<a href="quizzes.html">Quizzes</a>
 				<a href="contact.html">Contact us</a>
 			</div>
+		
+			
+			<div class="quiz">
+				<section id="p0">
+					<h3>1 - Which animal is immune to pain?</h3>
+					<label>
+						<input type="radio" value="1" name="p0" onclick="answer(0, this)"> Naked Mole Rat
+					</label>
+					<label>
+						<input type="radio" value="2" name="p0" onclick="answer(0, this)"> Alligator
+					</label>
+					<label>
+						<input type="radio" value="3" name="p0" onclick="answer(0, this)"> Red Panda
+					</label>
+				</section>
+
+				<section id="p1">
+					<h3>2 - Which animal has a reputation for being lazy?</h3>
+					<label>
+						<input type="radio" value="1" name="p1" onclick="answer(1, this)"> Rhino
+					</label>
+					<label>
+						<input type="radio" value="2" name="p1" onclick="answer(1, this)"> Sloth
+					</label>
+					<label>
+						<input type="radio" value="3" name="p1" onclick="answer(1, this)"> Red Panda
+					</label>
+				</section>
+
+				<section id="p2">
+					<h3>3 - Which animal eats over 2,000 bamboo leaves in a day?</h3>
+					<label>
+						<input type="radio" value="1" name="p2" onclick="answer(2, this)"> Red Panda
+					</label>
+					<label>
+						<input type="radio" value="2" name="p2" onclick="answer(2, this)"> Elephant
+					</label>
+					<label>
+						<input type="radio" value="3" name="p2" onclick="answer(2, this)"> Snake
+					</label>
+				</section>
+
+				<section id="p3">
+					<h3>4 - Which animal loses over 3000 teeth in a life time?</h3>
+					<label>
+						<input type="radio" value="1" name="p3" onclick="answer(3, this)"> Octopus
+					</label>
+					<label>
+						<input type="radio" value="2" name="p3" onclick="answer(3, this)"> Alligator
+					</label>
+					<label>
+						<input type="radio" value="3" name="p3" onclick="answer(3, this)"> Mongoose
+					</label>
+				</section>
+
+				<section id="p4">
+					<h3>5 - Which animal exhibits cat-like behaviors?</h3>
+					<label>
+						<input type="radio" value="1" name="p4" onclick="answer(4, this)"> Naked Mole Rat
+					</label>
+					<label>
+						<input type="radio" value="2" name="p4" onclick="answer(4, this)"> Alligator
+					</label>
+					<label>
+						<input type="radio" value="3" name="p4" onclick="answer(4, this)"> Red Panda
+					</label>
+				</section>
+
+				<button onclick="submitQuiz()">Submit Quiz</button>
+				<h2>Results: <span id="results"></span></h2>
+			</div>
+
 		</div>
 	</body>
 </html>
